@@ -42,6 +42,8 @@ server.use(adminBroOptions.options.rootPath, router);
 // =============================================
 // Run App
 const connection_string = process.env.CONNECTION_STRING
+const port = process.env.PORT || 5500
+
 const run = () => {
     mongoose.connect(connection_string, {
         useNewUrlParser: true,
@@ -51,7 +53,7 @@ const run = () => {
         .then(() => console.log('✅ → MongoDB connection established.'))
         .catch((error) => console.error(" ⚠️ MongoDB connection failed:", error.message));
 
-    server.listen(5500, () => console.log("Server started port 5500"));
+    server.listen(port, () => console.log("Server started port 5500"));
 };
 
 run();
