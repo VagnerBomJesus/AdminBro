@@ -1,0 +1,25 @@
+{
+  "name": "adminbro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VagnerBomJesus/AdminBro.git"
+  },
+  "author": "Vagner Bom Jesus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VagnerBomJesus/AdminBro/issues"
+  },
+  "homepage": "https://github.com/VagnerBomJesus/AdminBro#readme",
+  "dependencies": {
+    "@admin-bro/express": "^3.1.0",
+    "admin-bro": "^4.0.1",
+    "express": "^4.17.3",
+    "express-formidable": "^1.2.0"
+  }
+}
